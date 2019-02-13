@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -81,13 +81,13 @@
 
 <meta name="description" content="懒癌中晚期">
 <meta property="og:type" content="website">
-<meta property="og:title" content="在路上">
+<meta property="og:title" content="董师傅在路上">
 <meta property="og:url" content="https://dongjianghao.github.io/index.html">
-<meta property="og:site_name" content="在路上">
+<meta property="og:site_name" content="董师傅在路上">
 <meta property="og:description" content="懒癌中晚期">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在路上">
+<meta name="twitter:title" content="董师傅在路上">
 <meta name="twitter:description" content="懒癌中晚期">
 
 
@@ -96,7 +96,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -124,7 +124,7 @@
 
 
 
-  <title>在路上</title>
+  <title>董师傅在路上</title>
   
 
 
@@ -165,7 +165,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">在路上</span>
+        <span class="site-title">董师傅在路上</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -247,11 +247,11 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="不愿透露姓名的董师傅">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="在路上">
+      <meta itemprop="name" content="董师傅在路上">
     </span>
 
     
@@ -313,30 +313,19 @@
       
         
           
-            <p>也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。</p>
-<p>这里使用了<code>hexo-abbrlink</code>来实现。</p>
-<p>安装</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-abbrlink --save</span><br></pre></td></tr></table></figure>
-<p>在站点配置文件<code>_config.yml</code>中查找代码<code>permalink</code>，将其更改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">permalink: posts/:abbrlink/  # “posts/” 可自行更换</span><br></pre></td></tr></table></figure>
-<p>这里有个知识点：</p>
-<blockquote>
-<p>百度蜘蛛抓取网页的规则: 对于蜘蛛说网页权重越高、信用度越高抓取越频繁，例如网站的首页和内页。蜘蛛先抓取网站的首页，因为首页权重更高，并且大部分的链接都是指向首页。然后通过首页抓取网站的内页，并不是所有内页蜘蛛都会去抓取。</p>
-</blockquote>
-<p>搜索引擎认为对于一般的中小型站点，3层足够承受所有的内容了，所以蜘蛛经常抓取的内容是前三层，而超过三层的内容蜘蛛认为那些内容并不重要，所以不经常爬取。出于这个原因所以permalink后面跟着的最好不要超过2个斜杠。</p>
-<p>在站点配置文件<code>_config.yml</code>中添加代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># abbrlink config</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></table></figure>
-<p>可选择模式：</p>
-<ul>
-<li>crc16 &amp; hex</li>
-<li>crc16 &amp; dec</li>
-<li>crc32 &amp; hex</li>
-<li>crc32 &amp; dec<br>​</li>
-</ul>
-<p>至此完成。</p>
-<p>文章来源：<a href="http://muyunyun.cn/posts/f55182c5/" target="_blank" rel="noopener">hexo 摸爬滚打之进阶教程</a></p>
-
-          
+          也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。
+这里使用了hexo-abbrlink来实现。
+安装
+1npm install hexo-abbrlink --save
+在站点配置文件_config.yml中
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/453a3d26/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -388,11 +377,11 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="不愿透露姓名的董师傅">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/uploads/avatar.jpeg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="在路上">
+      <meta itemprop="name" content="董师傅在路上">
     </span>
 
     
@@ -454,9 +443,15 @@
       
         
           
-            <p>项目中处理多行文文本超出省略点的时候，使用了-webkit-box-orient: vertical这个属性，本地开发时没有问题，但是执行npm run build后发现，对应的样式丢失了。<br>搜索后发现是<code>optimize-css-assets-webpack-plugin</code> 插件造成的。<br>解决方法很简单：在该样式的上下写上注释，注意上面的叹号不能丢，实测不带叹号依旧会被过滤掉。<br><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.m-lines</span>&#123;</span><br><span class="line">	<span class="attribute">display</span>: -webkit-box;</span><br><span class="line">	-webkit-line-clamp: <span class="variable">$line</span>;</span><br><span class="line">	<span class="comment">/*! autoprefixer: off */</span></span><br><span class="line">	-webkit-box-orient: vertical;  </span><br><span class="line">	<span class="comment">/* autoprefixer: on */</span></span><br><span class="line">	<span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">	<span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
-          
+          项目中处理多行文文本超出省略点的时候，使用了-webkit-box-orient: vertical这个属性，本地开发时没有问题，但是执行npm run build后发现，对应的样式丢失了。搜索后发现是optimize-css-assets-webpack-plugin 插件造成的。解决方法很简单：
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/e0f6bde6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -524,6 +519,8 @@
       <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/uploads/avatar.jpeg" alt="不愿透露姓名的董师傅">
             
               <p class="site-author-name" itemprop="name">不愿透露姓名的董师傅</p>
               <p class="site-description motion-element" itemprop="description">懒癌中晚期</p>
@@ -611,12 +608,32 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i> 访问人数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i> 访问总量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
 
 
 
@@ -710,6 +727,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
