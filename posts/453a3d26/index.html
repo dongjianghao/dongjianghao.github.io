@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="Hexo,">
 
 
 
@@ -80,13 +80,14 @@
 
 
 <meta name="description" content="也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。 这里使用了hexo-abbrlink来实现。 安装 1npm install hexo-abbrlink --save 在站点配置文件_config.yml中查找代码permalink，将其更改为： 1permalink: posts/:abbrlink/">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo链接持久化解决方案">
 <meta property="og:url" content="https://dongjianghao.github.io/posts/453a3d26/index.html">
 <meta property="og:site_name" content="董师傅在路上">
 <meta property="og:description" content="也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。 这里使用了hexo-abbrlink来实现。 安装 1npm install hexo-abbrlink --save 在站点配置文件_config.yml中查找代码permalink，将其更改为： 1permalink: posts/:abbrlink/">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-13T02:57:53.912Z">
+<meta property="og:updated_time" content="2019-02-13T06:20:10.059Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo链接持久化解决方案">
 <meta name="twitter:description" content="也许你会数次更改文章题目或者变更文章发布时间，在默认设置下，文章链接都会改变，不利于搜索引擎收录，也不利于分享。唯一永久链接才是更好的选择。 这里使用了hexo-abbrlink来实现。 安装 1npm install hexo-abbrlink --save 在站点配置文件_config.yml中查找代码permalink，将其更改为： 1permalink: posts/:abbrlink/">
@@ -112,7 +113,7 @@
       apiKey: '3e88405c43a5fa86183ccb4c767e9ee1',
       indexName: 'myblog',
       hits: {"per_page":10},
-      labels: {"input_placeholder":"搜索文章","hits_empty":"没有找到关于 ${query} 的结果","hits_stats":"花费 ${time} ms 找到 ${hits} 个结果"}
+      labels: {"input_placeholder":"输入关键词进行搜索","hits_empty":"找不到关于 ${query} 的文章","hits_stats":"共找到 ${hits} 篇文章， 花了 ${time} ms"}
     }
   };
 </script>
@@ -196,6 +197,26 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            分类
           </a>
         </li>
       
@@ -320,6 +341,28 @@
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo技巧/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo技巧</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -345,6 +388,39 @@
             </span>
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  分钟
+                </span>
+              
+            </div>
           
 
           
@@ -398,6 +474,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          
+        </div>
       
 
       
@@ -498,7 +580,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -554,6 +654,15 @@
   </span>
   <span class="author" itemprop="copyrightHolder">不愿透露姓名的董师傅</span>
 
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count"></span>
   
 </div>
 
